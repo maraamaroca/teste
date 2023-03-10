@@ -1,0 +1,138 @@
+.background
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    border-radius: 0%;
+    width: 250px;
+    margin-left: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(imagens/wp7797217.jpg);
+    background-position:  top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+/*
+main * {
+    border: 1px solid red;
+}
+Não é mais necessário 
+*/
+
+header {
+    padding-top: 32px;
+    /*text-align: center;*/
+    
+}
+
+header div {
+    width: 300px;
+    margin: auto;
+
+    border-radius: 100%;
+
+    display: grid;
+    padding: 4px;
+
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.0);
+}
+
+header img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+
+    display: grid;
+    gap: 24px;
+
+    margin-top: 32px;
+}
+
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #4a3492 0%, #43E7AD50.52%, #0a0a0a 100%);
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: #ff0000;
+    padding: 4PX;
+    padding-top: 24px;
+    border-radius: 8px;
+
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #050505;
+}
+
+section ul {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+
+section ul li:hover {
+    transform: scale(1.1)
+}
+
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+.channel-list img {
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443E54;
+}
+
+header div {
+    animation: fromTop .7s .2s backwards;
+}
+
+main section {
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
